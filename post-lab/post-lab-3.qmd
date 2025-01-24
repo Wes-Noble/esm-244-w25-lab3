@@ -23,6 +23,20 @@ Create some exploratory tables or charts to help you better understand possible 
 
 ## Use a Tidymodel framework to conduct your analysis.
 
+```{r}
+wine_df <- wine_quality %>%
+  #mutate(quality = factor(survived),   ### categorical outcome variables need to be factors
+  #       pclass   = factor(pclass)) %>% ### turn some predictors to factor
+  #select(-cabin, -ticket) ### lots of NAs here - and not likely to be very helpful
+
+#surv_df |>
+ # group_by(survived) %>%
+ # summarize(n = n()) %>%
+ # ungroup() %>%
+  #mutate(prop = n / sum(n))
+```
+
+
 ## Visualize
 
 Present your final results and upgrade this document's YAML to a professional level quality.
